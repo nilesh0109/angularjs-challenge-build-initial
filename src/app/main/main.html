@@ -1,0 +1,29 @@
+<!--div class="container">
+  <div class="intro">
+    <a href="https://www.savedo.de"><img src="/assets/images/savedo.svg"/></a>
+    <h1 ng-bind="vm.title"></h1>
+    <p class="lead" ng-bind="vm.description"></p>
+  </div>
+</div-->
+<div class="sidebar">
+    <div class="sidebarHeader"><div class="sideHeaderTxt">Account Types</div></div>
+      <ul>
+        <li class="all"><a href="" ng-click="selectedAcctype=''">All</a><div class="badge">{{vm.AccountsCount.all}}</div></li>
+        <li class="checking"><a href="" ng-click="selectedAcctype='Checking'">Checking</a><span class="badge">{{vm.AccountsCount.checking}}</span></li>
+        <li class="savings"><a href="" ng-click="selectedAcctype='Savings'">Savings</a><span class="badge">{{vm.AccountsCount.savings}}</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="content">
+      <div class="listItem" ng-repeat="account in vm.accounts | filter:{ type: selectedAcctype } track by $index">
+          <div class="listHeaderBar" ng-class="account.type==='Checking' ? 'checkingBar' : 'savingsBar'"><div class="sideHeaderTxt txtLeft all">Bank Name</div><span class="mtop" ng-click="vm.removeAccount($index)">X</span></div>
+          <div class="detailLeft">{{account.Amount}}<span class="cur">€</span></div>
+          <div class="detailRight">
+            <div ng-if="account.BIC">BIC: {{account.BIC}}</div>
+            <div ng-if="account.IBAN">IBAN: {{account.IBAN}}</div>
+            <div ng-if="account.date">Date: {{account.date | date:'dd/MM/yyyy'}}</div>
+            <div ng-if="account.Maturity">Maturity: {{account.Maturity}}</div>
+          </div>
+      </div>
+    <div class="newBtn"><a href="#/new/">New Account</a></div>
+ </div>

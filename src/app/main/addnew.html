@@ -1,0 +1,31 @@
+<div class="contentWrapper">
+  <div class="newContainer">
+    <form name="newForm" ng-submit="vm.saveAccountDetails(newForm.$valid)" >
+    <select data-ng-options="o.name for o in vm.options" data-ng-model="vm.selectedOption">
+      <option>Select</option>
+    </select><br>
+    <input name="amount" required ng-if="vm.selectedOption.id!=0" type="text" placeholder="Amount" data-ng-model="vm.formData.amount"><br ng-if="vm.selectedOption.id!=0">
+    <div ng-messages="newForm.amount.$error" ng-show="newForm.amount.$touched" role="alert">
+      <div class="errorMsg" ng-message="required">Please enter a value for this field.</div>
+    </div>
+    <input name="bic" required ng-if="vm.selectedOption.id==1 && vm.selectedOption.id!=0" type="text" placeholder="BIC" data-ng-model="vm.formData.bic"><br ng-if="vm.selectedOption.id==1 && vm.selectedOption.id!=0">
+    <div ng-messages="newForm.bic.$error" ng-show="newForm.bic.$touched" role="alert">
+      <div class="errorMsg" ng-message="required">Enter BIC value.</div>
+    </div>
+    <input name="iban" required ng-if="vm.selectedOption.id==1 && vm.selectedOption.id!=0" type="text" placeholder="IBAN" data-ng-model="vm.formData.iban"><br ng-if="vm.selectedOption.id==1 && vm.selectedOption.id!=0">
+    <div ng-messages="newForm.iban.$error" ng-show="newForm.iban.$touched" role="alert">
+      <div class="errorMsg" ng-message="required">Enter IBAN value.</div>
+    </div>
+    <input name="date" required ng-if="vm.selectedOption.id==2 && vm.selectedOption.id!=0" type="date" placeholder="Date" data-ng-model="vm.formData.date"><br ng-if="vm.selectedOption.id==2 && vm.selectedOption.id!=0" style="168px !important;">
+    <div ng-messages="newForm.date.$error" ng-show="newForm.date.$touched" role="alert">
+      <div class="errorMsg" ng-message="required">Enter a date.</div>
+    </div>
+    <input name="maturity" required ng-if="vm.selectedOption.id==2 && vm.selectedOption.id!=0" type="text" placeholder="Maturity" data-ng-model="vm.formData.maturity"><br ng-if="vm.selectedOption.id==2 && vm.selectedOption.id!=0">
+    <div ng-messages="newForm.maturity.$error" ng-show="newForm.maturity.$touched" role="alert">
+      <div class="errorMsg" ng-message="required">Please enter a value for this field.</div>
+    </div>
+    <button class="cancel" ng-if="vm.selectedOption.id!=0" ng-click="vm.navBack()">Cancel</button>
+    <input class="btn save" type="submit" ng-if="vm.selectedOption.id!=0" value="Save">
+    </form>
+  </div>
+</div>  

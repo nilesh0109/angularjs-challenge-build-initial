@@ -1,0 +1,259 @@
+/* Do not remove the comments below. It's the markers used by wiredep to inject
+   sass dependencies when defined in the bower.json of your dependencies */
+
+// bower:scss
+// endbower
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.intro {
+    padding: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: gainsboro;
+    border-radius: 6px;
+    text-align: center;
+}
+hr {
+    clear: both;
+}
+img {
+    width: 168px;
+}
+/* added by saravanan  */
+
+body {
+    background: #FFF;
+}
+.sidebar {
+    float: left;
+    width: 24%;
+    border: 1px solid #b7b7b7;
+    position: relative;
+    margin: 10px;
+}
+.content {
+    float: left;
+    width: 73%;
+    margin-left: 6px;
+    color:#095e99;
+}
+.sidebarHeader {
+    text-align: center;
+    background: #d9d9d9;
+    height: 35px;
+}
+.sideHeaderTxt {
+    padding-top: 8px;
+}
+ul li {
+    margin-top: 20px;
+}
+li a {
+    text-decoration: none;
+    width: 87%;
+    display: inline-block;
+}
+.badge {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    margin-right: 20px;
+}
+.txtLeft {
+    text-align: left;
+    margin-left: 10px;
+    width: 97%;
+    padding-top: 4px;
+}
+.cur{
+    font-size: 0.7em;
+    margin-left: 2px;
+}
+.listItem {
+    border: 1px solid #b7b7b7;
+    margin-top:10px;
+}
+.listHeaderBar {
+    text-align: center;
+    background: #d9d9d9;
+    height: 28px;
+    display: flex;
+}
+.mtop {
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    background: #858484;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    color:#FFF;
+    cursor:pointer;
+}
+.detailLeft {
+    display: inline-block;
+    font-size: 2em;
+    padding: 13px;
+    margin-left: 5px;
+}
+.detailRight {
+    display: inline-block;
+    margin-left: 20px;
+}
+.newBtn {
+    width: 100%;
+    height: 40px;
+    border: 1px dashed #0000FF;
+    margin-top: 20px
+}
+.newBtn a {
+    text-align: center;
+    margin-top: 10px;
+    display: block;
+}
+.newContainer{
+    margin: 0px auto;
+    width: 500px;
+}
+input {
+    height:20px; 
+    width:96%; 
+    padding:5px 8px;
+    margin-top:20px;
+}
+.contentWrapper {
+    margin-top: 100px !important;
+}
+button{
+  margin-top:20px;
+}
+.btn{
+  height: auto;
+    width: auto;
+    padding: 0px;
+}
+select {
+  font: 400 12px/1.3 "Helvetica Neue", sans-serif;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  border: 1px solid #0b5394;
+  line-height: 1.5;
+  outline: 0;
+  color: #0b5394;
+  border-color: #0b5394;
+  padding: 0.65em 2.5em 0.55em 0.75em;
+  border-radius: 3px;
+  background: linear-gradient(#0b5394, #0b5394) no-repeat,
+              linear-gradient(-135deg, rgba(255,255,255,0) 50%, white 50%) no-repeat,
+              linear-gradient(-225deg, rgba(255,255,255,0) 50%, white 50%) no-repeat,
+              linear-gradient(#0b5394, #0b5394) no-repeat;
+  background-color: white;
+  background-size: 1px 100%, 20px 20px, 20px 20px, 20px 60%;
+  background-position: right 20px center, right bottom, right bottom, right bottom;   
+}
+select option{
+    font-size: 13pt;
+}
+.errorMsg{
+    font-size: .9em;
+    color: #FF0000;
+}
+select,input[type='text'],input[type='date']{
+      border: 3px solid #9fc5e8;
+}
+.cancel {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border:none;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 18px;
+  background: #0957a4;
+  padding: 8px 20px 8px 20px;
+  text-decoration: none;
+}
+
+.cancel:hover {
+  background: #0957a4;
+  text-decoration: none;
+}
+
+.save {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border:none;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 18px;
+  background: #f56635;
+  padding: 8px 20px 8px 20px;
+  text-decoration: none;
+}
+
+.save:hover {
+  background: #f56635;
+  text-decoration: none;
+}
+.all{
+  color:#666666;
+}
+.checking{
+  color:#0957a4;
+}
+.savings{
+  color:#f56635;
+}
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+.savingsBar{
+      border-top: 3px solid #f56635;
+}
+.checkingBar{
+      border-top: 3px solid #0957a4;
+}
+@media screen and (max-width: 600px) {
+    .sidebar {
+        float: none;
+        width: 95%;
+    }
+    .content {
+        float: none;
+        width: 95%;
+    }
+    input {
+      width:95% !important;
+    }
+    select{
+      width:100%;
+    }
+    .newContainer{
+      width:88% !important;
+    }
+}
+/* new css ends */
+/* Do not remove the comments below. It's the markers used by gulp-inject to inject
+   all your sass files automatically */
+
+// injector
+// endinjector
